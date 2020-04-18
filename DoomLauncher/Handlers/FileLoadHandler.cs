@@ -182,7 +182,7 @@ namespace DoomLauncher.Handlers
                     sortedList.Add(gameFile);
             }
 
-            sortedList.AddRange(gameFiles.Except(sortedList));
+            sortedList.InsertRange(0,gameFiles.Except(sortedList));
             return sortedList;
         }
     }
