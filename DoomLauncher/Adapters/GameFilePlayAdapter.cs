@@ -89,7 +89,7 @@ namespace DoomLauncher
             }
 
             string[] extensions = sourcePortData.SupportedExtensions.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
-            launchFiles = SortParameters(launchFiles, extensions).ToList();
+            //launchFiles = SortParameters(launchFiles, extensions).ToList();
 
             BuildLaunchString(sb, sourcePort, launchFiles);
 
